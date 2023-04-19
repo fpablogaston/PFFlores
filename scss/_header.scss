@@ -1,0 +1,17 @@
+
+header{grid-area:header;}
+
+/* productos */
+
+.encabezadoProductos{grid-template-columns: encProductos;}
+
+/* ------- GRID PRODUCTOS */
+header, footer, ul{display:flex;flex-direction: row;}
+.jCSpaceBetween{justify-content: space-between;}
+a{font-size: 22px; color:black;}
+
+/*PRODUCTOS */
+
+.header{background-color: lightgrey; margin-bottom: 5px;
+    justify-content: space-between;}
+  

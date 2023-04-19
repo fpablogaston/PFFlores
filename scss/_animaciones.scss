@@ -1,0 +1,15 @@
+
+//declaramos variable
+@keyframes transformacion{
+    0%{transform:translate(-100px, -100px);}
+    25%{transform:translate(0,0)}
+    25%{transform: scale(1.5,1.5);}
+    100%{transform: skew(0deg, 0deg);}
+}
+
+.logo{
+    animation-name: transformacion ;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite ;
+    animation-timing-function: ease-in-out;
+}

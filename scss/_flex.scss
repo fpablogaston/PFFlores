@@ -1,0 +1,24 @@
+
+/*MOBILE*/
+
+@media (max-width:768px){
+    header{display:flex;flex-direction: column;
+    align-items: center;}
+    ul{display:flex; flex-direction: column;
+    justify-content: center;padding-left: 0;}
+    li{padding:2px; margin:2px;}
+    main,footer{display: flex; flex-direction: column;
+    align-items: center;}
+    
+    .gridContacto, .form form{display:flex;
+        flex-direction: column;}
+    
+
+    .gridContacto, .form form{display:flex;
+    flex-direction: column;}
+ }
+
+    /* ------- GRID PRODUCTOS */
+header, footer, ul{display:flex;flex-direction: row;}
+.jCSpaceBetween{justify-content: space-between;}
+a{font-size: 22px; color:black;}
