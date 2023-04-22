@@ -14,6 +14,7 @@ li{padding:20px;margin:20px;}
 .bgLGrey{background-color: lightgray;}
 .flexCard{display:flex;flex-direction: column;}
 .card{border-radius: 20px; align-items: center;}
+.img30{width:30%;height: auto;}
 
 *{padding:0;margin:0;}
 div h1{text-align: center;}
@@ -43,6 +44,22 @@ main{grid-area:main;}
 footer{grid-area:footer;}
 
 
+//declaramos variable
+@keyframes transformacion{
+    0%{transform:translate(-100px, -100px);}
+    25%{transform:translate(0,0)}
+    50%{transform: scale(2,2);}
+    100%{transform: skew(0deg, 0deg);}
+}
+
+.logo{
+    animation-name: transformacion ;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite ;
+    animation-timing-function: ease-in-out;
+}
+
+
 .gridMain{
     display:grid;
     grid-template-areas:
@@ -58,6 +75,13 @@ footer{grid-area:footer;}
 .parrafoIzq{grid-area:parrafoIzq;}
 .imgParrafo{grid-area:imgParrafo;}
 .parrafoDer{grid-area:parrafoDer;}
+
+.gridRRSS{display:grid;grid-template-areas: "rrss rrss" "face linke";
+    grid-template-columns: 50% 50%; grid-template-rows: auto auto;}
+.linke{grid-area:linke;}
+.face{grid-area:face;}
+.tituloRRSS{grid-area: rrss; text-align:center;}
+
 
 /* ----------- GRID INDEX */ 
 main.gridProductos{
