@@ -80,11 +80,11 @@ footer{grid-area:footer;}
     grid-template-columns: 50% 50%; grid-template-rows: auto auto;}
 .linke{grid-area:linke;}
 .face{grid-area:face;}
-.tituloRRSS{grid-area: rrss; text-align:center;}
+.tituloRRSS{grid-area: rrss; text-align:left;}
 
 
 /* ----------- GRID INDEX */ 
-main.gridProductos{
+.gridProductos{
     display: grid;
     grid-template-areas: 
     "encProductos encProductos encProductos encProductos"
@@ -171,19 +171,16 @@ p{font-size: 20px;}
     ul{display:flex; flex-direction: column;
     justify-content: center;padding-left: 0;}
     li{padding:2px; margin:2px;}
-    main,footer{display: flex; flex-direction: column;
+    main,footer, header{display: flex; flex-direction: column;
     align-items: center;}
     .img-fluid{width:100%;height: auto;}
     .header{background-color: lightgrey; margin-bottom: 5px;
     justify-content: space-between;}
-    .gridContacto, .form form{display:flex;
+   
+    .gridContacto, .form form, .datosContacto{display:flex;
         flex-direction: column;}
     
     .footer{padding:10px;justify-content: space-around;}
-    .footer--bg
-
-    .gridContacto, .form form{display:flex;
-    flex-direction: column;}
 
 *{padding:0;margin:0;}
 div h1{text-align: center;}
