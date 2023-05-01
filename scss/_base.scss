@@ -15,7 +15,7 @@ li{padding:20px;margin:20px;}
 .flexCard{display:flex;flex-direction: column;}
 .card{border-radius: 20px; align-items: center;}
 .img30{width:30%;height: auto;}
-
+.textoCentrado{text-align: center;}
 *{padding:0;margin:0;}
 div h1{text-align: center;}
 .form .inputSubmit{height:40px;}
@@ -43,6 +43,13 @@ header{grid-area:header;}
 main{grid-area:main;}
 footer{grid-area:footer;}
 
+
+.gradienteHeader{
+    background-image: linear-gradient(to bottom, white, gray, transparent);
+}
+.gradienteFooter{
+    background-image: linear-gradient(to top, white, gray, transparent);
+}
 
 //declaramos variable
 @keyframes transformacion{
@@ -92,11 +99,8 @@ footer{grid-area:footer;}
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto auto;
 }
-.encabezadoProductos{grid-template-columns: encProductos;}
-.card1{grid-area:card1;}
-.card2{grid-area:card2;}
-.card3{grid-area:card3;}
-.card4{grid-area:card4;}
+
+
 
 /* ------- GRID PRODUCTOS */
 header, footer, ul{display:flex;flex-direction: row;}
@@ -129,10 +133,31 @@ a{font-size: 22px; color:black;}
     }
 
     .boton:hover{cursor:pointer;}
-    .gridProducto{display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: auto;}
+
+ 
  }
+
+ //clase a extender EXTEND
+
+.botonExtend{
+    width:200px;
+    height:50px;
+    border: 1px solid black;
+    background-color: white;
+    color:black;
+    font-size:12px;
+    text-align: center;
+    border-radius: 20px;
+    padding:5px;
+    margin:10px;
+}
+
+.boton-primario{
+    @extend .boton;
+    background-color: grey;
+    color:black;
+    border: 1px solid black;
+}
 
 
      /* GRID CONTACTO */
@@ -177,6 +202,14 @@ p{font-size: 20px;}
     .header{background-color: lightgrey; margin-bottom: 5px;
     justify-content: space-between;}
    
+    
+.gradienteHeader{
+    background-image: linear-gradient(to bottom, white, gray, transparent);
+}
+.gradienteFooter{
+    background-image: linear-gradient(to top, white, gray, transparent);
+}
+
     .gridContacto, .form form, .datosContacto{display:flex;
         flex-direction: column;}
     

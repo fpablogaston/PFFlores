@@ -1,0 +1,22 @@
+//clase a extender
+
+.botonExtend{
+    width:200px;
+    height:50px;
+    border: 1px solid black;
+    background-color: white;
+    color:black;
+    font-size:12px;
+    text-align: center;
+    border-radius: 20px;
+    padding:5px;
+    margin:10px;
+}
+
+.boton-primario{
+    @extend .boton;
+    background-color: grayscale($color: #00000034);
+    color:black;
+    border: 1px solid black;
+}
+
